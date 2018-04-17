@@ -47,6 +47,9 @@
               <a class="nav-link js-scroll-trigger" href="#positives">Positives</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#criticisms">Criticisms</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Author</a>
             </li>
           </ul>
@@ -115,15 +118,21 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
             <h2 class="section-heading">Positives</h2>
-            <p>Despite the limitations of data when creating projects about Mexico, the visualization makes the most of the data that it has.</p>
-            <p>First, the visualization does a great job at conveying the extent to which the problem of violence in Mexico is a regional issue.  It is very clear in the visualization
+            <p>Despite the limitations of data when creating projects about Mexico, the visualization makes the most of the data that it has.  Besides the color coding at the state level,
+            you are also able to focus on one state and view the yearly trends for that state. </p>
+            <img src="img/viewers_choice/guerrero_line_graph.png" alt="">
+            <p>The visualization does a great job at conveying the extent to which the problem of violence in Mexico is a regional issue.  It is very clear in the visualization
               that some regions experience violence to a much greater degree, and this is conveyed with color-coding and the sizes of the square regions that represent the different
-              states in Mexico.</p>
-            <img src="img/outbreak/leaflet.png" alt="">
-            <p><br>Additionally, from the line chart, it is obvious that there was a single incident around September 1st
-              that caused the majority of the cholera deaths.  If it had been multiple water pumps that were contaminated,
-              there might have been multiple large spikes in deaths, as opposed to one large spike.</p>
-            <img src="img/viewers_choice/guerrero_line_graph" alt="">
+              states in Mexico.  The regional violence in Mexico is corroborated by the CIA's travel warnings to Mexico, which specifically designate Colima, Guerrero, Michoacan,
+            Sinaloa, and Tamaulipas as do not travel states.  Other states, like Yucatan, where Cancun is located, are relatively peaceful.</p>
+            <img src="img/viewers_choice/cia_warnings.png" alt="">
+            <p><br>Another one of my favorite things about this data visualization is the animation features that displays the different crime rates across Mexico from 1997 to 2016.
+              This is a great feature because it shows when violence in Mexico dramatically increased, which was right after 2007 when the then President of Mexico declared war on the
+              drug cartels that previously operated without interference form the federal government. Watching the visualization chronologically, one immediately asks, what happened
+              before 2008?  Why was there a sudden spike in crime that still hasn't returned to it's previous levels?</p>
+            <img src="img/viewers_choice/2007.png" alt="">
+            <img src="img/viewers_choice/2008.png" alt="">
+            <img src="img/viewers_choice/2009.png" alt="">
           </div>
         </div>
       </div>
@@ -133,11 +142,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto" style="flex: 0 0 100%;">
-            <h2 class="section-heading">Data</h2>
-            <p>The data utilized was chosen by the professor of the course, Dr. Andy Johnson.</p>
-            <p>It included data on the date and location of cholera outbreak deaths and attacks, and data on the
-              population of the UK at the time, and comparative statistics to cholera deaths in Naples.</p>
-            <p>For the application, I created bar charts and pie charts using the ggplot library once the data was processed into R Studio.</p>
+            <h2 class="section-heading">Criticisms</h2>
+            <p>One of my main criticisms of the project is that the scale isn't consistent.  It seems that the author chose natural cut-off points in the data, but didn't
+            specify how he arrived at those cut-offs.  Another one of my criticisms is that the home page immediately loads the data for 2017, but that data is incomplete.  Additionally,
+              the data for the kidnapping crime rates seems very low, and could have been improved.  Futhermore, the visualization does not resize for smartphones, so one has to know that they can only view the visualization on a latptop or large-scale display.</p>
           </div>
         </div>
 
@@ -145,17 +153,17 @@
           <div class="col-lg-4 my-auto">
             <div class="device-container">
               <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-              <img src="img/outbreak/cholera_deaths_csv.png" class="img-fluid" alt="">
+              <img src="img/viewers_choice/crime_scale.png" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-8 my-auto">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-6">
-                  <img src="img/outbreak/uk_census_age_pie.png" class="img-fluid" alt="">
+                  <img src="img/viewers_choice/kidnapping_rates.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6">
-                  <img src="img/outbreak/uk_census_male_age_bar.png" class="img-fluid" alt="">
+                  <img src="img/viewers_choice/2017_not_updated.png" class="img-fluid" alt="">
                 </div>
               </div>
             </div>
@@ -173,11 +181,6 @@
         <h2> Author</h2>
         <ul class="list-inline list-social">
           <p>Guillermo Rojas Hernandez</p>
-          <li class="list-inline-item github">
-            <a href="https://github.com/guillermokrh/cs424-project1-about" style="background-color:black;">
-              <i class="fa fa-github"></i>
-            </a>
-          </li>
         </ul>
       </div>
     </section>
